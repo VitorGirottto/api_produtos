@@ -19,10 +19,14 @@ Primeiro, clone o repositório do projeto para a sua máquina local:
 cd api_produtos
 
 ### 2. Instalar as dependências
+
 Instale as dependências do projeto com o comando:
 
 **npm install express mongoose bcryptjs jsonwebtoken dotenv**
 
+Após pode estar dando o comando:
+
+**npm install**
 
 Essas dependências são necessárias para o funcionamento da API:
 
@@ -46,16 +50,6 @@ O Nodemon irá monitorar as alterações no código e reiniciar o servidor quand
 
 ### 4. Configurar o arquivo .env
 Dentro do arquivo .env, adicione as variáveis de ambiente:
-
-DB_USER=nomedousuário
-
-DB_PASS=senhadousuário
-
-MONGO_HOST=cluster0.thnu9.mongodb.net
-
-MONGO_DATABASE=nomedadatabase
-
-SECRET=chavesecreta
 
 DB_USER: Nome de usuário para acessar o banco de dados MongoDB.
 
