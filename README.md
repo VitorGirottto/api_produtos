@@ -8,25 +8,28 @@ Este é um backend desenvolvido em Node.js usando o framework Express. Ele forne
 - **MongoDB** (pode ser o MongoDB local ou MongoDB Atlas)
 
 ## Passos para rodar a aplicação
+ㅤ
 
 ### 1. Clonar o repositório
 
 Primeiro, clone o repositório do projeto para a sua máquina local:
 
 
-**git clone https://github.com/VitorGirotto/api_produtos.git**
+`git clone https://github.com/VitorGirotto/api_produtos.git`
 
-cd api_produtos
+`cd api_produtos`
+
+ㅤ
 
 ### 2. Instalar as dependências
 
 Instale as dependências do projeto com o comando:
 
-**npm install express mongoose bcryptjs jsonwebtoken dotenv**
+`npm install express mongoose bcryptjs jsonwebtoken dotenv`
 
 Após pode estar dando o comando:
 
-**npm install**
+`npm install`
 
 Essas dependências são necessárias para o funcionamento da API:
 
@@ -41,12 +44,16 @@ jsonwebtoken: Para gerar e verificar tokens JWT (autenticação).
 
 dotenv: Para carregar variáveis de ambiente a partir do arquivo .env.
 
+ㅤ
+
 ### 3. Instalar o Nodemon (opcional)
 Para reiniciar o servidor automaticamente durante o desenvolvimento, você pode instalar o Nodemon:
 
-**npm install --save-dev nodemon**
+`npm install --save-dev nodemon`
 
 O Nodemon irá monitorar as alterações no código e reiniciar o servidor quando necessário.
+
+ㅤ
 
 ### 4. Configurar o arquivo .env
 Dentro do arquivo .env, adicione as variáveis de ambiente:
@@ -61,18 +68,22 @@ MONGO_DATABASE: Nome do banco de dados.
 
 SECRET: Chave secreta usada para gerar tokens JWT.
 
+ㅤ
+
 ### 5. Rodar o servidor
 Para rodar o servidor, use um dos seguintes comandos:
 
 Modo de produção: Caso você queira rodar o servidor normalmente, use o comando:
 
-**npm start**
+`npm start`
 
 Modo de desenvolvimento: Caso você esteja desenvolvendo e queira que o servidor reinicie automaticamente ao salvar alterações, use o Nodemon:
 
-**npm run dev**
+`npm run dev`
 
 O servidor vai rodar na porta 3000 por padrão, conforme configurado no arquivo app.js.
+
+ㅤ
 
 ### 6. Testar a aplicação
 Você pode testar os endpoints da API utilizando uma ferramenta como Postman ou Insomnia.
@@ -95,11 +106,18 @@ npm run dev: Inicia o servidor em modo de desenvolvimento com o Nodemon (reiníc
 
 npm install: Instala todas as dependências do projeto.
 
-Dependências
+ㅤ
+
+**Dependências**
+
 Este projeto utiliza as seguintes dependências:
 
 express: Framework para construção de APIs.
+
 mongoose: Biblioteca para interação com o MongoDB.
+
 bcryptjs: Para hash de senhas (usado na autenticação).
+
 jsonwebtoken: Para gerar e verificar tokens JWT.
+
 dotenv: Para carregar as variáveis de ambiente de forma segura.
